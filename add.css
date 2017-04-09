@@ -1,0 +1,331 @@
+header, main:not(#login), footer {
+    padding-left: 250px;
+}
+body {
+    background: #fafafa;
+}
+date {
+    color: rgba(0,0,0,0.54);
+    margin-left: 10px;
+    font-weight: 400;
+}
+.subheader {
+    color: rgba(0,0,0,0.54);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.caption {
+    color: rgba(0,0,0,0.54) !important;
+    font-size: 12px !important;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.tabs {
+    overflow: hidden;
+}
+.dropdown-content {
+    font-weight: normal;
+}
+.dropdown-content li {
+    padding: 0;
+}
+
+nav .nav-content {
+    border-top: 2px solid #eee;
+}
+
+.side-nav {
+    width: 250px;
+}
+
+.card-flat {
+    border: 1px solid #e0e0e0;
+    box-shadow: none;
+}
+.fourth-content {
+    position: absolute;
+    top: 16px;
+    right: 96px;
+    color: rgba(0,0,0,0.54);
+}
+.third-content {
+    position: absolute;
+    top: 16px;
+    right: 53px;
+    color: rgba(0,0,0,0.54);
+}
+.secondary-content {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: rgba(0,0,0,0.54);
+}
+
+.collection .collection-item {
+    line-height: 2.5rem;
+    position: relative;
+}
+
+.collection .collection-item .title {
+    font-size: 16px;
+}
+
+.collection .collection-item p,
+.collection .collection-item.avatar p {
+    line-height: 18px;
+    font-size: 12px;
+    margin: 0 24px 0 0;
+    position: relative;
+}
+
+.collection .collection-item .secondary-content {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.collection-item-content,
+.card span {
+    position: relative;
+    display: block;
+}
+.dropdown-button {
+    z-index: 30px
+}
+.percentage {
+position: absolute;
+width: 80%;
+height: 100%;
+top: 0;
+left: 0;
+}
+.search {
+    position: fixed;
+    background: #eee;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    height: 64px;
+}
+.search .autocomplete-content {
+    margin-top: 0;
+}
+.search.active {
+    visibility: visible;
+    opacity: 1;
+}
+.search-bar {
+    height: 64px !important;
+border: none !important;
+padding: 0 60px !important;
+line-height: 64px;
+margin: 0 !important;
+border-bottom: 0;
+}
+.search-bar:focus {
+    border-bottom: 1px solid #448AFF !important;
+    box-shadow: 0 1px 0 0 #448AFF !important;
+
+}
+.search-icon {
+    position: absolute;
+    margin: 0 18px;
+    top: 10px;
+    line-height: 44px;
+    height: 44px;
+}
+.close {
+    right: 0;
+}
+
+.success {
+    background-color: rgba(0, 255, 127, 0.5) !important;
+}
+
+.warning {
+    background-color: rgba(255, 235, 59, 0.5) !important;
+}
+
+.error {
+    background-color: rgba(244, 67, 54, 0.5) !important;
+}
+
+.card .card-image {
+    height: 200px;
+}
+
+.navbar-fixed nav {
+    width: calc(100% - 250px);
+}
+.card-tabs {
+    border-bottom: 1px solid #e0e0e0;
+}
+ nav ul a.btn-floating {
+     margin: 0;
+     padding: 0;
+ }
+
+ .fixed-action-btn ul li {
+     float: right;
+ }
+ .button-collapse i {
+     height: 64px !important;
+     line-height: 64px !important;
+ }
+main:not(#login) .container {
+    margin-top: 86px;
+}
+.brand-logo {
+    left: 60px !important;
+    width: calc(100% - 168px);
+    overflow-x: auto;
+    font-size: 16px !important;
+    padding: 0 !important;
+    transform: none !important;
+}
+.brand-logo::-webkit-scrollbar {
+    display: none;
+}
+.switch {
+    margin-bottom: 20px;
+}
+.button-collapse i {
+    height: 56px;
+    line-height: 56px;
+}
+.nav-breadcumb {
+    padding: 24px 0;
+}
+.breadcrumb {
+    font-size: 18px;
+    color: rgba(68, 138, 255, .7);
+}
+.breadcrumb::before {
+    color: rgba(68, 138, 255, 0.3);
+}
+.breadcrumb:last-child {
+    color: rgb(68, 138, 255);
+}
+
+.collapsible {
+    box-shadow: none;
+}
+.collapsible .collection {
+    border: 1px solid #e0e0e0;
+}
+.collapsible-body {
+    padding: 24px 14px;
+    background: #fafafa;
+}
+.modal-content {
+    padding: 0 !important;
+    margin: 0;
+}
+.modal-content li {
+    float: none;
+    line-height: 48px;
+}
+.modal-content li .row {
+    margin-bottom: 0 !important;
+}
+.modal-content li .row span,
+.modal-content li .row a,
+.modal-content li .row p {
+    padding: 0 16px;
+    margin: 0;
+}
+.modal-content li span,
+.modal-content li a{
+    color: rgba(0,0,0,0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+}
+.modal-content li span.title {
+    line-height: 64px;
+    height: 64px;
+    margin: 0 0 -8px;
+}
+.modal-content li p {
+    line-height: 1.5;
+    margin: 0 0 20px;
+    padding: 0 32px;
+}
+.modal-content li > a >i.material-icons {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 32px 0 0;
+    width: 24px;
+    color: rgba(0,0,0,0.54);
+}
+.modal-content li > .title >i.material-icons {
+    height: 64px;
+    line-height: 64px;
+    margin: 0 32px 0 0;
+    width: 24px;
+    color: rgba(0,0,0,0.54);
+}
+.modal-content .divider {
+    margin:8px 0;
+}
+li.divider-icon {
+    margin: 8px 0 16px;
+}
+li.divider-icon .divider {
+    width: calc(100% - 88px);
+    float: right;
+}
+@media only screen and (max-width : 600px) {
+    nav ul li {
+        padding: 2px 10px;
+    }
+    nav ul a {
+        padding: 3px 5px;
+    }
+    nav .nav-wrapper {
+    border-bottom: none;
+    }
+    .button-collapse i {
+        height: 56px !important;
+        line-height: 56px !important;
+    }
+    main:not(#login) .container {
+        margin-top: 64px;
+    }
+    .search {
+        height: 56px;
+    }
+    .search-bar {
+        height: 56px !important;
+        line-height: 56px;
+    }
+    .search-icon {
+        top: 6px;
+    }
+}
+.collection {overflow: visible;}
+.card-subheader {display: block; font-size: 16px; font-weight: 500; line-height: 32px;}
+
+@media only screen and (max-width : 992px) {
+    header, main:not(#login), footer {
+        padding-left: 0;
+    }
+    .search {
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar-fixed nav {
+        width: 100%;
+    }
+}

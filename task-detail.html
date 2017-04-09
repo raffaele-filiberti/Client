@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="sass/materialize.min.css">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <header>
+        <ul id="slide-out" class="side-nav fixed">
+            <li>
+                <div class="userView">
+                    <div class="background" style="background: url('img/01.jpg') center center no-repeat; background-size: cover"></div>
+                    <a href="#!user"><div class="circle" style="background: url('img/avatar01.jpg') center center no-repeat; background-size: cover"></div></a>
+                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">assessment</i>Costumers</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">work</i>Tasks</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">supervisor_account</i>Users</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">texture</i>Templates</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+            <!-- <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li> -->
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="flat nav-extended">
+                <div class="nav-wrapper">
+                    <div class="search">
+                        <input id="search" type="text" class="search-bar autocomplete" placeholder="Search">
+                        <a href="#!" class="search-icon"><i class="material-icons">search</i></a>
+                        <a href="#search_close" class="search-icon close"><i class="material-icons">close</i></a>
+                    </div>
+                    <a href="#!" class="brand-logo hide-on-med-and-up">Task Detail</a>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right">
+                        <li><a href="#!"><i class="material-icons">search</i></a></li>
+                        <li class="hide-on-small-only"><a href="#!"><i class="material-icons">notifications</i></a></li>
+                        <li>
+                            <a href='#' data-activates='dropdown1' class="dropdown-button"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">one</a></li>
+                                <li><a href="#!">two</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content hide-on-small-only">
+                    <div class="container">
+                        <div class="nav-breadcumb">
+                            <a href="customers.html" class="breadcrumb">Customers</a>
+                            <a href="customer-detail.html" class="breadcrumb">Santal</a>
+                            <a href="projects.html" class="breadcrumb">Projects</a>
+                            <a href="project-detail.html" class="breadcrumb">Packaging</a>
+                            <a href="tasks.html" class="breadcrumb">Tasks</a>
+                            <a class="breadcrumb">Arancia Rossa</a>
+                        </div>
+                    </div>
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light">
+                        <i class="material-icons">mode_edit</i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+<main>
+    <div class="fixed-action-btn hide-on-med-and-up">
+        <a class="btn-floating btn-large">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card card-flat">
+                    <div class="card-content">
+                        <span class="card-title">Arancia Rossa
+                            <a href='#' data-activates='dropdown2' class="dropdown-button right"><i class="material-icons right">more_vert</i></a>
+                            <ul id='dropdown2' class='dropdown-content'>
+                                <li><a href="#!">Archive</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Delete</a></li>
+                            </ul>
+                            <!-- <i class="material-icons right">attach_money</i> -->
+                            <!-- <i class="material-icons right">lock</i> -->
+
+                        </span>
+                        <p class="caption">
+                            <a href="customer-detail.html">Santal</a> - <a href="project-detail.html">Packaging</a>
+                        </p>
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab success"><a class="active" href="#test4"><span class="hide-on-small-only">Briefing</span><span class="show-on-small-only">1</span></a></li>
+                            <li class="tab warning"><a href="#test5"><span class="hide-on-small-only">Layout Scribble</span><span class="show-on-small-only">2</span></a></li>
+                            <li class="tab error"><a href="#test6"><span class="hide-on-small-only">Shooting</span><span class="show-on-small-only">3</span></a></li>
+                            <li class="tab error"><a href="#test7"><span class="hide-on-small-only">Final File</span><span class="show-on-small-only">4</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content grey lighten-4">
+                        <div id="test4">
+                            <div class="section">
+                                <span class="card-subheader">Briefing Document</span>
+                            </div>
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">edit</i>Description</div>
+                                    <div class="collapsible-body">
+                                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">file_upload</i>Upload New File</div>
+                                    <div class="collapsible-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="file-field input-field col s12">
+                                                    <div class="btn">
+                                                        <span><i class="material-icons">file_upload</i></span>
+                                                        <input type="file">
+                                                    </div>
+                                                    <div class="file-path-wrapper">
+                                                        <input class="file-path validate" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                    <label for="textarea1">Description</label>
+                                                </div>
+                                            </div>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                                <i class="material-icons right">send</i>
+                                            </button>
+
+                                        </form>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Uploaded File</div>
+                                    <div class="collapsible-body">
+                                        <ul class="collection">
+                                            <li class="collection-item">
+                                                logo_santal.jpg
+                                                <a data-target="modal1" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="test5">
+                            <div class="section">
+                                <span class="card-subheader">Layout Files</span>
+                            </div>
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">edit</i>Description</div>
+                                    <div class="collapsible-body">
+                                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">file_upload</i>Upload New File</div>
+                                    <div class="collapsible-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="file-field input-field col s12">
+                                                    <div class="btn">
+                                                        <span><i class="material-icons">file_upload</i></span>
+                                                        <input type="file">
+                                                    </div>
+                                                    <div class="file-path-wrapper">
+                                                        <input class="file-path validate" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                    <label for="textarea1">Description</label>
+                                                </div>
+                                            </div>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                                <i class="material-icons right">send</i>
+                                            </button>
+
+                                        </form>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Uploaded File</div>
+                                    <div class="collapsible-body">
+                                        <ul class="collection">
+                                            <li class="collection-item warning">
+                                                scatola_succo01.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+
+                                            <li class="collection-item success">
+                                                logo_santal02.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+                                            <li class="collection-item error">
+                                                logo_santal01.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="test6">
+                            <div class="section">
+                                <span class="card-subheader">Shooting</span>
+                            </div>
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">edit</i>Description</div>
+                                    <div class="collapsible-body">
+                                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">file_upload</i>Data</div>
+                                    <div class="collapsible-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="file-field input-field col s12 m6">
+                                                    <label for="date1">Expected Date</label>
+                                                    <input type="date" id="date1" class="datepicker">
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                        <select>
+                                                          <option value="" disabled selected>Choose your option</option>
+                                                          <option value="1">Confirmed</option>
+                                                          <option value="2">Not Confirmed</option>
+                                                        </select>
+                                                        <label>Status</label>
+                                                </div>
+                                            </div>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Save
+                                                <i class="material-icons right">send</i>
+                                            </button>
+
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="section">
+                                <span class="card-subheader">Shooting Files</span>
+                            </div>
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">edit</i>Description</div>
+                                    <div class="collapsible-body">
+                                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">file_upload</i>Upload New File</div>
+                                    <div class="collapsible-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="file-field input-field col s12">
+                                                    <div class="btn">
+                                                        <span><i class="material-icons">file_upload</i></span>
+                                                        <input type="file">
+                                                    </div>
+                                                    <div class="file-path-wrapper">
+                                                        <input class="file-path validate" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                    <label for="textarea1">Description</label>
+                                                </div>
+                                            </div>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                                <i class="material-icons right">send</i>
+                                            </button>
+
+                                        </form>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Uploaded File</div>
+                                    <div class="collapsible-body">
+                                        <ul class="collection">
+                                            <li class="collection-item warning">
+                                                scatola_succo01.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+
+                                            <li class="collection-item success">
+                                                logo_santal02.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+                                            <li class="collection-item error">
+                                                logo_santal01.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="test7">
+                            <div class="section">
+                                <span class="card-subheader">Final Design Files</span>
+                            </div>
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">edit</i>Description</div>
+                                    <div class="collapsible-body">
+                                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">file_upload</i>Upload New File</div>
+                                    <div class="collapsible-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="file-field input-field col s12">
+                                                    <div class="btn">
+                                                        <span><i class="material-icons">file_upload</i></span>
+                                                        <input type="file">
+                                                    </div>
+                                                    <div class="file-path-wrapper">
+                                                        <input class="file-path validate" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                    <label for="textarea1">Description</label>
+                                                </div>
+                                            </div>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                                <i class="material-icons right">send</i>
+                                            </button>
+
+                                        </form>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Uploaded File</div>
+                                    <div class="collapsible-body">
+                                        <ul class="collection">
+                                            <li class="collection-item warning">
+                                                scatola_succo01.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+
+                                            <li class="collection-item success">
+                                                logo_santal02.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+                                            <li class="collection-item error">
+                                                logo_santal01.jpg
+                                                <a data-target="modal2" class="secondary-content" href="user-detail.html">
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal bottom-sheet">
+        <ul class="modal-content">
+            <li><span class="title"><i class="material-icons left">photo</i>logo_santal.jpg</span></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!"><i class="material-icons left">file_download</i>Download</a></li>
+            <li><a href="#!"><i class="material-icons left">delete</i>Delete</a></li>
+            <li><div class="divider"></div></li>
+            <li>
+                <span class="caption">description</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="modal2" class="modal bottom-sheet">
+        <ul class="modal-content">
+            <li><span class="title"><i class="material-icons left">photo</i>logo_santal02.jpg</span></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!"><i class="material-icons left">check</i>Approved</a></li>
+            <li><a href="#!"><i class="material-icons left">close</i>Disapproved</a></li>
+            <li><a href="#!"><i class="material-icons left">file_download</i>Download</a></li>
+            <li><a href="#!"><i class="material-icons left">delete</i>Delete</a></li>
+            <li><div class="divider"></div></li>
+            <li>
+                <span class="caption">description</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </li>
+        </ul>
+    </div>
+</main>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

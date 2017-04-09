@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="sass/materialize.min.css">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <header>
+        <ul id="slide-out" class="side-nav fixed">
+            <li>
+                <div class="userView">
+                    <div class="background" style="background: url('img/01.jpg') center center no-repeat; background-size: cover"></div>
+                    <a href="#!user"><div class="circle" style="background: url('img/avatar01.jpg') center center no-repeat; background-size: cover"></div></a>
+                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">assessment</i>Costumers</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">work</i>Tasks</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">supervisor_account</i>Users</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">texture</i>Templates</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+            <!-- <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li> -->
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="flat nav-extended">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo hide-on-med-and-up">Users</a>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right">
+                        <li><a href="#!"><i class="material-icons">search</i></a></li>
+                        <li class="hide-on-small-only"><a href="#!"><i class="material-icons">notifications</i></a></li>
+                        <li>
+                            <a href='#' data-activates='dropdown1' class="dropdown-button"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">one</a></li>
+                                <li><a href="#!">two</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content hide-on-small-only">
+                    <div class="container">
+                        <div class="nav-breadcumb">
+                            <a class="breadcrumb">Users</a>
+                        </div>
+                    </div>
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light">
+                        <i class="material-icons">mode_edit</i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <a class="subheader">Active Users</a>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <img src="img/01.jpg" alt="" class="circle">
+                            <a href="user-detail.html">Paolo Artoni</a> <span class="caption">Administrator</span>
+                            <p>
+                                Qreactive s.r.l
+                            </p>
+                            <a href='#' data-activates='dropdown2' class="dropdown-button secondary-content"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown2' class='dropdown-content'>
+                                <li><a href="#!">one</a></li>
+                                <li><a href="#!">two</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="subheader">Users To Subscribe</a>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <a href="user-detail.html">Paolo Artoni</a>
+                            <a href="#!" class="secondary-content"><i class="material-icons">checked</i></a>
+                            <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

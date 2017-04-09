@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="sass/materialize.min.css">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <header>
+        <ul id="slide-out" class="side-nav fixed">
+            <li>
+                <div class="userView">
+                    <div class="background" style="background: url('img/01.jpg') center center no-repeat; background-size: cover"></div>
+                    <a href="#!user"><div class="circle" style="background: url('img/avatar01.jpg') center center no-repeat; background-size: cover"></div></a>
+                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">assessment</i>Costumers</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">work</i>Tasks</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">supervisor_account</i>Users</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">texture</i>Templates</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+            <!-- <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li> -->
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="flat nav-extended">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo hide-on-med-and-up">Tasks</a>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right">
+                        <li><a href="#!"><i class="material-icons">search</i></a></li>
+                        <li class="hide-on-small-only"><a href="#!"><i class="material-icons">notifications</i></a></li>
+                        <li>
+                            <a href='#' data-activates='dropdown1' class="dropdown-button"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">one</a></li>
+                                <li><a href="#!">two</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content hide-on-small-only">
+                    <div class="container">
+                        <div class="nav-breadcumb">
+                            <a href="customer-detail.html" class="breadcrumb">Santal</a>
+                            <a href="project-detail.html" class="breadcrumb">Packaging</a>
+                            <a class="breadcrumb">Tasks</a>
+                        </div>
+                    </div>
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light">
+                        <i class="material-icons">mode_edit</i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="fixed-action-btn hide-on-med-and-up">
+            <a class="btn-floating btn-large">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+        </div>
+        <div class="container">
+            <a class="subheader">Task in Process</a>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collection task">
+                        <li class="collection-item">
+                            <div class="percentage success" style="width: 80%"></div>
+                            <div class="collection-item-content">
+                                <a class="title" href="task-detail.html">Arancia Rossa</a> <span class="caption">80% - Shooting</span>
+                                <p>
+                                    Expiring Step's Date: <date>24/04/2015</date>
+                                </p>
+                            </div>
+                            <a href='#' data-target='modal1' class="secondary-content">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                        </li>
+                        <li class="collection-item">
+                            <div class="percentage warning" style="width: 55%"></div>
+                            <div class="collection-item-content">
+                                <a class="title" href="task-detail.html">Arancia Rossa</a> <span class="caption">55% - Shooting</span>
+                                <p>
+                                    Expiring Step's Date: <date>24/04/2015</date>
+                                </p>
+                            </div>
+                            <a href='#' data-activates='dropdown3' class="dropdown-button secondary-content"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown3' class='dropdown-content'>
+                                <li><a href="#!">Archive</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Delete</a></li>
+                            </ul>
+                        </li>
+                        <li class="collection-item">
+                            <div class="percentage error" style="width: 36%"></div>
+                            <div class="collection-item-content">
+                                <a class="title" href="task-detail.html">Arancia Rossa</a> <span class="caption">36% - Shooting</span>
+                                <p>
+                                    Expiring Step's Date: <date>24/04/2015</date>
+                                </p>
+                            </div>
+                            <a href='#' data-activates='dropdown4' class="dropdown-button secondary-content"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown4' class='dropdown-content'>
+                                <li><a href="#!">Archive</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Delete</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="subheader">Task Completed</a>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collection task">
+                        <li class="collection-item">
+                            <a class="title" href="task-detail.html">Arancia Rossa</a>
+                            <a href='#' data-activates='dropdown5' class="dropdown-button secondary-content"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown5' class='dropdown-content'>
+                                <li><a href="#!">Archive</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Delete</a></li>
+                            </ul>
+                        </li>
+                        <li class="collection-item">
+                            <a class="title" href="task-detail.html">Arancia Rossa</a>
+                            <i class="material-icons fourth-content">lock</i>
+                            <i class="material-icons third-content">attach_money</i>
+                            <a href='#' data-activates='dropdown6' class="dropdown-button secondary-content"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown6' class='dropdown-content'>
+                                <li><a href="#!">Archive</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Delete</a></li>
+                            </ul>
+                        </li>
+                        <li class="collection-item">
+                            <a class="title" href="task-detail.html">Arancia Rossa</a>
+                            <a href='#' data-activates='dropdown7' class="dropdown-button secondary-content"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown7' class='dropdown-content'>
+                                <li><a href="#!">Archive</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Delete</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal1" class="modal bottom-sheet">
+            <ul class="modal-content">
+                <li><span class="title"><i class="material-icons left">photo</i>Arancia Rossa</span></li>
+                <li><div class="divider"></div></li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Deadline</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>24/05/2017</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Product Manager</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>Maria</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Country</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>EU</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Brienfing</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>Missing</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Dieline</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>23/03/2017</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Layout Scribble</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>01/02/2018</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Shooting</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>10/10/2018</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Final File</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>05/01/2019</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Printing</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>05/01/2019</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Plant</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>05/01/2019</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Warehouse</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>05/01/2019</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Billed</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>No</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row valign-wrapper">
+                        <div class="col s6 valign">
+                            <span class="caption">Private</span>
+                        </div>
+                        <div class="col s6 valign">
+                            <p>No</p>
+                        </div>
+                    </div>
+                </li>
+                <li><div class="divider"></div></li>
+                <li><a href="#!"><i class="material-icons left">mode_edit</i>Modify</a></li>
+                <li><a href="#!"><i class="material-icons left">storage</i>Archive</a></li>
+                <li><a href="#!"><i class="material-icons left">delete</i>Delete</a></li>
+
+            </ul>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

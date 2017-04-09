@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="sass/materialize.min.css">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <header>
+        <ul id="slide-out" class="side-nav fixed">
+            <li>
+                <div class="userView">
+                    <div class="background" style="background: url('img/01.jpg') center center no-repeat; background-size: cover"></div>
+                    <a href="#!user"><div class="circle" style="background: url('img/avatar01.jpg') center center no-repeat; background-size: cover"></div></a>
+                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">assessment</i>Costumers</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">work</i>Tasks</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">supervisor_account</i>Users</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">texture</i>Templates</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+            <!-- <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li> -->
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="flat nav-extended">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo hide-on-med-and-up">User Edit</a>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right">
+                        <li><a href="#!"><i class="material-icons">search</i></a></li>
+                        <li class="hide-on-small-only"><a href="#!"><i class="material-icons">notifications</i></a></li>
+                        <li>
+                            <a href='#' data-activates='dropdown1' class="dropdown-button"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">one</a></li>
+                                <li><a href="#!">two</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content hide-on-small-only">
+                    <div class="container">
+                        <div class="nav-breadcumb">
+                            <a href="users.html" class="breadcrumb">Users</a>
+                            <a href="user-detail.html" class="breadcrumb">Paolo Artoni</a>
+                            <a class="breadcrumb">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card card-flat">
+                    <div class="card-content">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <span class="subheader col s12">Personal Details</span>
+                                    <div class="input-field col s12 m6">
+                                        <input id="name" type="text" class="validate">
+                                        <label for="name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="cell_phone" type="tel" class="validate">
+                                        <label for="cell_phone">Cell Phone</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="fax" type="tel" class="validate">
+                                        <label for="fax">Fax</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">mail</i>
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="address" type="text" class="validate">
+                                        <label for="address">Address</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="CAP" type="text" class="validate">
+                                        <label for="CAP">CAP</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="province" type="text" class="validate">
+                                        <label for="province">Province</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="city" type="text" class="validate">
+                                        <label for="city">City</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="nation" type="text" class="validate">
+                                        <label for="nation">Nation</label>
+                                    </div>
+                                    <div class="file-field input-field col s12">
+                                        <span class="subheader">Avatar Image</span>
+                                        <div class="btn">
+                                            <span>File</span>
+                                            <input type="file">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input id="avatar" class="file-path validate" placeholder="Avatar" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m6">
+                                        <span class="subheader">Notification</span>
+                                        <form action="#">
+                                            <div class="switch">
+                                                <label>
+                                                    Off
+                                                    <input checked type="checkbox">
+                                                    <span class="lever"></span>
+                                                    On
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
