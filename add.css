@@ -65,7 +65,13 @@ nav .nav-content {
     right: 16px;
     color: rgba(0,0,0,0.54);
 }
-
+.collection .collection-item.child {
+    line-height: 1.5rem;
+    padding-left: 35px;
+}
+.collection .collection-item.child .secondary-content {
+    top: 9px;
+}
 .collection .collection-item {
     line-height: 2.5rem;
     position: relative;
@@ -114,6 +120,8 @@ left: 0;
     visibility: hidden;
     opacity: 0;
     height: 64px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
 }
 .search .autocomplete-content {
     margin-top: 0;
@@ -225,7 +233,7 @@ main:not(#login) .container {
     padding: 24px 14px;
     background: #fafafa;
 }
-.modal-content {
+.bottom-sheet .modal-content {
     padding: 0 !important;
     margin: 0;
 }
