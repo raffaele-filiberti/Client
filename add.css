@@ -15,7 +15,9 @@ date {
     font-weight: 500;
     line-height: 48px;
 }
-
+.subheader .material-icons {
+    margin-top: 50%;
+}
 .caption {
     color: rgba(0,0,0,0.54) !important;
     font-size: 12px !important;
