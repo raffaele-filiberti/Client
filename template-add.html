@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="sass/materialize.min.css">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <header>
+        <ul id="slide-out" class="side-nav fixed">
+            <li>
+                <div class="userView">
+                    <div class="background" style="background: url('img/01.jpg') center center no-repeat; background-size: cover"></div>
+                    <a href="#!user"><div class="circle" style="background: url('img/avatar01.jpg') center center no-repeat; background-size: cover"></div></a>
+                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">assessment</i>Costumers</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">work</i>Tasks</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">supervisor_account</i>Users</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">texture</i>Templates</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+            <!-- <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li> -->
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="flat nav-extended">
+                <div class="nav-wrapper">
+                    <div class="search">
+                        <input id="search" type="text" class="search-bar autocomplete" placeholder="Search">
+                        <a href="#!" class="search-icon"><i class="material-icons">search</i></a>
+                        <a href="#search_close" class="search-icon close"><i class="material-icons">close</i></a>
+                    </div>
+                    <a href="#!" class="brand-logo hide-on-med-and-up">Task Detail</a>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right">
+                        <li><a href="#search"><i class="material-icons">search</i></a></li>
+                        <li class="hide-on-small-only"><a href="#!"><i class="material-icons">notifications</i></a></li>
+                        <li>
+                            <a href='#' data-activates='dropdown1' class="dropdown-button"><i class="material-icons">more_vert</i></a>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!">one</a></li>
+                                <li><a href="#!">two</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content hide-on-small-only">
+                    <div class="container">
+                        <div class="nav-breadcumb">
+                            <a href="customers.html" class="breadcrumb">Customers</a>
+                            <a href="customer-detail.html" class="breadcrumb">Santal</a>
+                            <a href="projects.html" class="breadcrumb">Projects</a>
+                            <a href="project-detail.html" class="breadcrumb">Packaging</a>
+                            <a href="tasks.html" class="breadcrumb">Tasks</a>
+                            <a class="breadcrumb">Add New</a>
+                        </div>
+                    </div>
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light">
+                        <i class="material-icons">check</i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card card-flat">
+                        <div class="card-content">
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <span class="subheader col s12">General Infos</span>
+                                        <div class="input-field col s12 m6">
+                                            <input id="name" type="text" class="validate">
+                                            <label for="name">Template Name</label>
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1">Description</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <span class="subheader col s12">Steps</span>
+                                        <div class="col s12">
+                                                <ul class="collection">
+                                                    <li class="collection-item">
+                                                        <a href="user-detail.html">Briefing</a>
+                                                        <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+                                                    </li>
+                                                    <li class="collection-item">
+                                                        <a href="user-detail.html">Layout Scribble</a>
+                                                        <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+                                                    </li>
+                                                    <li class="collection-item">
+                                                        <a href="user-detail.html">Shooting</a>
+                                                        <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+                                                    </li>
+                                                    <li class="collection-item">
+                                                        <a href="user-detail.html">Final File</a>
+                                                        <a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>
+                                                    </li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">EU</option>
+                                            <option value="2">ING</option>
+                                            <option value="3">USA</option>
+                                        </select>
+                                        <label>Country</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">M1</option>
+                                            <option value="2">M2</option>
+                                            <option value="3">AD</option>
+                                            <option value="3">OP</option>
+                                        </select>
+                                        <label>Design Type</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">John Artur</option>
+                                        </select>
+                                        <label>Product Manager</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">Not Yet</option>
+                                            <option value="2">Completed</option>
+                                        </select>
+                                        <label>Billed</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <span class="subheader col s12">Terms</span>
+                                    <div class="input-field col s12 m6">
+                                        <input id="data01" type="date" class="datepicker">
+                                        <label for="data01">Deadline</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="data01" type="date" class="datepicker">
+                                        <label for="data01">Layout scribble</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="data01" type="date" class="datepicker">
+                                        <label for="data01">Shooting</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="data01" type="date" class="datepicker">
+                                        <label for="data01">Dieline</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="data01" type="date" class="datepicker">
+                                        <label for="data01">Printing</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="data01" type="date" class="datepicker">
+                                        <label for="data01">Plant</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="data01" type="date" class="datepicker">
+                                        <label for="data01">Warehouse</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
